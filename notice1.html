@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Notice Management System</title>
+        <link  rel="stylesheet" type="text/css"  href="text.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+       
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        </head>
+        
+        <body>
+            <div class="jumbotron">
+                <h1>Notice Management System</h1>
+                <p><a class="btn btn-primary btn-sm" href="#" role="button">Notice</a>  <a class="btn btn-primary btn-sm" href="#" role="button">NMS tutorials</a></p>
+              </div>
+              <div class="container ab" align="left">
+                    <div id="divPage">
+                        <table width="80%" class="tableborder">
+                            <tr>
+                                <td>
+                                    <span id="ctl00_MainContent_lblHeading" class="headertext">NOTICE</span>
+                                </td>
+                            </tr>
+                            <tr><hr>
+                                <td>
+                                        <div class="btn-group" role="group" aria-label="...">
+                                                <button type="button" class="btn btn-primary">View</button>      
+                                        </div>
+                               
+                                        <div class="btn-group" role="group" aria-label="...">
+                                                <button type="button" class="btn btn-primary">Add New</button>
+                                                
+                                        </div> <hr>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="tableborder">
+                         <tr>
+                            <td>
+                                <label>
+                                        <span>Miscellaneous<input type="checkbox"></span>
+                                </label>
+                                    
+                            </td>
+                                <td>
+                                        <div class="checkbox"></div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr align="left" valign="top">
+                                <td align="left" valign="top">
+                                    <span style="font-size:12px;">Segment</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                            <td colspan="3">
+                                    <div class="btn-group">
+                                               
+                                     
+                                        <select name="maincontentsegment" id="maincontentsegment" class="textfiled" style="width:100%;">
+                                                <option selected="selected" value="-100">-Select-</option>
+                                                <option value="1">Hydrocarbons</option>
+                                                <option value="2">Retail</option>
+                                                <option value="3">Jio</option>
+                                                <option value="4">Media</option>
+                                                <option value="5">Others</option>
+                                        </select>
+                                        
+                                <span id="maincontentsegment" style="font-size:12px;"></span>
+                                <input type="hidden" name="maincontentsegment" id="maincontentsegment" />
+                                
+
+                                <span id="maincontentsegment" style="display:none;"></span>
+                                    
+                                    </div>
+                            </td>   
+                            <td></td>
+                            <td></td> 
+                        </tr>
+                        <tr>
+                                <td></td>
+                            </tr>
+                        <tr align="left" valign="top">
+                                <td align="left" valign="top">
+                                    <span style="font-size:12px;">Entity/Company</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                            <td colspan="3">
+                                <div class="btn-group">
+                                    <select name="maincontententity" id="maincontententity" class="textfiled" style="width: 100%;">
+                                        <option selected="selected" value="-100">-Select-</option>
+                                        <option value="1">a</option>
+                                        <option value="2">b</option>
+                                        <option value="3">c</option>
+                                        <option value="4">d</option>
+                                        <option value="5">e</option>
+                                    </select>
+                                    <span id="maincontententity" style="font-size: 12px;"></span>
+                                    <input type="hidden" name="maincontententity" id="maincontententity" />
+                                    <span id="maincontententity" style="display: none;"></span>
+                                </div>
+
+                            </td>
+                        </tr> 
+                        <tr>
+                                <td></td>
+                            </tr> 
+                        <tr align="left" valign="top">
+
+                                <td align="left" valign="top" width="20%">
+                                    <span style="font-size:12px;">Primary Legislation</span>
+                                    <span class="spnStar">*</span>
+                                </td>  
+                                <td></td>
+                                <td>
+                                    <div class="btn-group">
+                                        <select name="MainContentPriLegislation" id="MainContentPriLegislation" class="textfiled" style="width: 100%;">
+                                            <option selected="selected" value="-100">-Select-</option>
+                                            <option value="1">A           </option>
+                                            <option value="2">B</option>
+                                            <option value="3">C</option>
+                                            <option value="4">D</option>
+                                            <option value="5">E</option>
+                                            <option value="6">F</option>
+                                        </select>
+                                        <span id="MainContentPriLegislation" style="font-size: 12px"></span>
+                                        <input type="hidden" name="MainContentPriLegislation" id="MainContentPriLegislation"/>
+                                        <span id="MainContentPriLegislation" style="display: none;"></span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td></td>
+                            </tr>
+                        <tr align="left" valign="top">
+                             <td align="left" valign="top">
+                                    <span style="font-size:12px;">Recipient Name</span>
+                                    <span class="spnStar">*</span>
+                                    
+
+                            </td>
+                            <td></td>
+                            <td>
+                                    <div class="form-group">
+                                            
+                                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Recipt name">
+                                          </div>
+                            </td>
+                            <td></td>
+                            <td aling="left" valign="top">
+                                    <span style="font-size:12px;">Receipt Date</span>
+                                    
+                                       
+                                
+                            </td>
+                            <td></td>
+                            <td>
+                                    <input name="MainContenttxtReceiptDate" type="text"  maxlength="10" id="MainContent_txtReceiptDate"style="width: 285px" />
+                                    <input type="image" name="MainContentImgReceiptDate" id="MainContent_ImgReceiptDate" style="height:18px;width:18px;" />
+                            </td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 12px;">Recipient Mobile Number</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                        <div class="input-group">
+                                                <span class="input-group-addon">+91</span>
+                                                <input type="text" class="form-control" id="exampleInputNumber">
+                                          </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                    <span style="font-size: 12px;">Recipient Landline Number</span>
+                                    
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="input-group">
+                                   <span class="input-group-addon"><input type="text"></span>
+                                    <input type="text" class="form-control" id="exampleInputNumber">
+
+                                </div>
+                            </td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 12px;">Notice Letter Number in Govt. Folio</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                        <input type="text" class="form-control" id="exampleInputName2">
+                                </td>
+                           <td></td>
+                                <td>
+                                    <span style="font-size: 12px;">Notice Date</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                        <input type="date" name="Notice Date">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 12px;">Issuing Authority</span>
+                                    <span class="spnStar">*</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                        <input type="text" class="form-control" id="exampleInputName2">
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span style="font-size: 12px;">FLD</span>
+
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                </tr>
+                            <tr align="left" valign="top">
+
+                                    <td align="left" valign="top" width="20%">
+                                        <span style="font-size:12px;">State</span>
+                                        
+                                    </td>  
+                                    <td></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <select name="MainContentstate" id="MainContentstate" class="textfiled" style="width: 100%;">
+                                                <option selected="selected" value="-100">-Select-</option>
+                                                <option value="1">A </option>
+                                                <option value="2">B</option>
+                                                <option value="3">C</option>
+                                                <option value="4">D</option>
+                                                <option value="5">E</option>
+                                                <option value="6">F</option>
+                                            </select>
+                                            <span id="MainContentstate" style="font-size: 12px"></span>
+                                            <input type="hidden" name="MainContentstate" id="MainContentstate"/>
+                                            <span id="MainContentstate" style="display: none;"></span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    
+
+                                            <td align="left" valign="top" width="20%">
+                                                <span style="font-size:12px;">City</span>
+                                                
+                                            </td> 
+                                            <td></td> 
+                                            <td>
+                                                <div class="btn-group">
+                                                    <select name="MainContentcity" id="MainContentcity" class="textfiled" style="width: 100%;">
+                                                        <option selected="selected" value="-100">-Select-</option>
+                                                        <option value="1">A           </option>
+                                                        <option value="2">B</option>
+                                                        <option value="3">C</option>
+                                                        <option value="4">D</option>
+                                                        <option value="5">E</option>
+                                                        <option value="6">F</option>
+                                                    </select>
+                                                    <span id="MainContentcity" style="font-size: 12px"></span>
+                                                    <input type="hidden" name="MainContentcity" id="MainContentcity"/>
+                                                    <span id="MainContentcity" style="display: none;"></span>
+                                                </div>
+                                            </td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                </tr>
+                
+                                        <tr align="left" valign="top">
+
+                                                <td align="left" valign="top" width="20%">
+                                                    <span style="font-size:12px;">Previous Notice Letter Number in Govt.Folio,If Applicable :</span>
+                                                    <span class="spnStar">*</span>
+                                                </td>  
+                                                <td></td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <select name="MainContentPnletternumber" id="MainContentPnletternumber" class="textfiled" style="width: 100%;">
+                                                            <option selected="selected" value="-100">-Select-</option>
+                                                            <option value="1">A</option>
+                                                            <option value="2">B</option>
+                                                            <option value="3">C</option>
+                                                            <option value="4">D</option>
+                                                            <option value="5">E</option>
+                                                            <option value="6">F</option>
+                                                        </select>
+                                                        <span id="MainContentPnletternumber" style="font-size: 12px"></span>
+                                                        <input type="hidden" name="MainContentPnletternumber" id="MainContentPnletternumber"/>
+                                                        <span id="MainContentPnletternumber" style="display: none;"></span>
+                                                    </div>
+                                                
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                
+                                          </tr>
+                                          <tr>
+                                                <td></td>
+                                            </tr>
+                                          <tr>
+                                              <td>
+                                                    <span style="font-size:12px;">Notice Detail(max characters length 3000)</span>
+                                                    
+                                              </td>
+                                              <td></td>
+                                              <td>
+                                                    <div> <textarea class="form-control" rows="3" cols="20"></textarea></div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                                <td></td>
+                                            </tr>
+                                          <tr>
+                                              <td>
+                                                  <span style="font-size: 12px;">Recipient Address(max characters length 100)</span>
+                                                  
+                                              </td>
+                                              <td></td>
+                                              <td>
+                                                  <div> <textarea class="form-control" rows="3" cols="20"></textarea> </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                                <td></td>
+                                            </tr>
+                                          <tr>
+                                                <td align="left" valign="top">
+                                                    <span id="ctl00_MainContent_lblUploadNotice" style="font-size:12px;">Upload Scan Copy</span><span class="spnStar">*</span>
+                                                    <span id="ctl00_MainContent_ibifilemsg" style="font-size:12px;"><br>( File upto 8 mb)</span>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                    
+                                                    <input type="file" name="MainContent$flUpload" id="MainContent_flUpload" />
+                                                    <span id="MainContent_rfvbtnUpload" style="display:none;"></span>
+                    
+                                                </td>
+                                                <td></td>
+                                                <td align="justify" valign="middle">
+                                                    <input type="submit" name="MainContentBtnUploadAppliedFile" value="Upload" onclick="return Checkfile();" id="MainContent_BtnUploadAppliedFile" class="btn1" />
+                                                </td>
+                                                <td></td>
+                                                <td align="left" valign="top" colspan="2">
+                                                    <input name="MainContenttxthiddenfile" type="text" id="MainContent_txthiddenfile" class="textfiled" style="display: none" />
+                                                    <span id="MainContent_lblFilePath" style="font-size:12px;"></span>
+                                                    
+                                                </td>
+                    
+                    
+                                            </tr>
+                                            <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                            <tr>
+                                                <td>
+                                                        <div class="btn-group" role="group" aria-label="...">
+                                                                <button type="button" class="btn btn-default">Save</button>
+                                                              
+                                                                
+                                                        </div>
+                                               
+                                                        <div class="btn-group" role="group" aria-label="...">
+                                                                <button type="button" class="btn btn-default">Cancel</button>
+                                                        </div>
+                                                </td>
+                                            </tr>
+                                            </table>
+
+                           
+
+                            
+                            
+                                        
+                                            
+                                            
+                          
+                           
+                        
+
+
+                                              
+
+ 
+                    
+                     
